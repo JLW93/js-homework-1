@@ -8,7 +8,7 @@ let dog_names = ["Max","HAS","PuRple","dog"]
 
 function findWords(string, names){
     for (let i = 0; i < names.length; i++){
-        if (string.includes(names[i])) {
+        if (string.toLowerCase().includes(names[i].toLowerCase())) {
             console.log('Matched dog_name');
         } else {
             console.log('No Matches');
